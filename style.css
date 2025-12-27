@@ -1,0 +1,420 @@
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #00111f; /* dark navy base */
+  color: #e0f7ff;
+}
+
+/* 2. Navbar */
+header {
+  background: rgba(0,0,0,0.6);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00d9ff;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #e0f7ff;
+  transition: 0.3s;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+  color: #00d9ff;
+}
+
+/* 3. Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #00d9ff;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #66f0ff;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.buttons .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #00d9ff;
+  color: #00111f;
+}
+
+.secondary {
+  border: 2px solid #00d9ff;
+  color: #00d9ff;
+}
+
+.primary:hover,
+.secondary:hover {
+  background: #00aacc;
+  color: white;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid #00d9ff;
+  box-shadow: 0 0 20px #00d9ff;
+}
+
+/* 4. Content Pages */
+.content-page {
+  padding: 80px 10%;
+}
+
+.content-page h1 {
+  text-align: center;
+  color: #00d9ff;
+  margin-bottom: 30px;
+}
+
+.project {
+  background: rgba(0, 217, 255, 0.05);
+  border-left: 4px solid #00d9ff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.project h2 {
+  color: #66f0ff;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin: 0;
+}
+
+/* Paragraphs, lists alignment */
+.content-page p,
+.content-page ul,
+.content-page li {
+  text-align: left;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 15px;
+}
+
+/* 5. Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* 6. Contact Page Specific */
+.contact-info p, 
+.contact-info a {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #e0f7ff;
+}
+
+/* Addditional Cards */
+
+.contact-card {
+  background: rgba(0, 217, 255, 0.05);
+  border-left: 4px solid #00d9ff;
+  border-radius: 12px;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h2 {
+  color: #66f0ff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #e0f7ff;
+}
+
+.contact-info a {
+  color: #00d9ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Addition stop */
+
+
+/* 7. About Me */
+.about-me p, 
+.about-me a {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #e0f7ff;
+}
+
+/* 8. My Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.skills-list li {
+  background: #00d9ff;
+  color: #00111f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00d9ff;
+  transition: 0.3s;
+  text-align: left;
+}
+
+/* 9. Project container */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  background: rgba(0, 217, 255, 0.05);
+  border-left: 4px solid #00d9ff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Text section */
+.project-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-text h2 {
+  color: #66f0ff;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.project-text p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Media section */
+.project-media {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Video styling */
+.project-media video {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  max-height: 400px;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 0 15px #00d9ff;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-media video {
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
+/* Optional hover effect */
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project-media video:hover {
+  transform: scale(1.02);
+}
+
+/* 10. Skills badges */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Additional Skill Cards */
+
+.Skills-card {
+  background: rgba(0, 217, 255, 0.05);
+  border-left: 4px solid #00d9ff;
+  border-radius: 12px;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.Skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.Skills-card h1 {
+  color: #66f0ff;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.Skills-card p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #e0f7ff;
+}
+
+
+.Skills-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.Skills-list li {
+  display: list-item; 
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #e0f7ff;
+} 
+
+/* Additional stop */
+
+
+/* 11. Certificates */
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  background: rgba(0, 217, 255, 0.05);
+  border-left: 4px solid #00d9ff;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Text section */
+.certificate-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.certificate-text h2 {
+  color: #66f0ff;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.certificate-text p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Media section */
+.certificate-media {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Video styling */
+.certificate-media img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  max-height: 400px;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 0 15px #00d9ff;
+  transition: transform 0.3s ease;
+}
+
